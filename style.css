@@ -83,10 +83,10 @@ main {
     flex-wrap: wrap;
     align-items: center;
     height: 100vh;
-    margin: 0 90px;
+    margin: 0 200px;
     gap: 70px;
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: 50px;
     justify-content: center;
 }
 
@@ -142,6 +142,10 @@ section .contact-social {
     gap: 20px;
     font-size: 50px;
     margin: 20px;
+}
+
+section .contact-social a {
+    color: black;
 }
 
 /* Dark mode */
