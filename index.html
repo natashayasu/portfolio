@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Natasha Kaori</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Natasha Kaori</title>
 </head>
 <body>
-  <nav>
-    <div id="logo"><a href="#">Menu</a></div>
-    <span id="menu-btn" onclick="openMenu()">&#9776;</span>
-    <span id="close-btn" onclick="closeMenu()">&#9747;</span>
-    <ul id="menu">
-      <li><a href="#">Início</a></li>
-      <li><a href="#">Trajetória</a></li>
-      <li><a href="#">Projetos</a></li>
-    </ul>
-    <div class="toggle-btn">
-      <button id="toggle-theme">Dark mode</button>
-      <button id="toggle-lang">English</button>
-    </div>
-  </nav>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-menu"><a href="">Menu</a></div>
+            <ul>
+                <li><a href="#journey">Trajetória</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Projetos</a></li>
+            </ul>
+            <div class="nav-btn">
+                <button id="btn-theme" onclick="mudarTema()">Dark mode</button>
+                <button>English</button>
+            </div>
+        </div>
+    </nav>
 
-  <main>
-    <div class="about">
-      <div id="about-name">Natasha Kaori</div>
-      <div id="about-text">
-        Sou Natasha Kaori, 20 anos, graduada em Tecnólogo de Análise e Desenvolvimento de Sistemas pela UNICID Tatuapé (2024) e atualmente cursando Bacharelado em Ciências da Computação, com previsão de conclusão em 2027. Tenho foco em Front-end e, atualmente, estou estagiando como suporte técnico em uma empresa de turismo. Busco sempre aprimorar minhas habilidades e encarar novos desafios na área de tecnologia.
-      </div>
-      <a href="#contact"><button id="btn-contact">Contatos</button></a>
-    </div>
-    <div class="about-img"><img src="assets/favicon.png" alt="desenho" /></div>
-  </main>
+    <main>
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-title">Natasha Kaori</div>
+                <div class="about-text">Sou Natasha Kaori, 20 anos, graduada em Tecnólogo de Análise e Desenvolvimento de Sistemas pela UNICID Tatuapé (2024) e atualmente cursando Bacharelado em Ciências da Computação, com previsão de conclusão em 2028. Tenho foco em Front-end e, atualmente, estou estagiando como suporte técnico em uma empresa de turismo. Busco sempre aprimorar minhas habilidades e encarar novos desafios na área de tecnologia.</div>
+                <a href="#contact"><button>Contatos</button></a>
+            </div>
+            <div class="about-img"><img src="assets/eu.png" alt="Kaori"></div>
+        </div>
+    </main>
 
-  <section>
-    <div class="contact-title" id="contact">Contatos</div>
-    <div class="contact-social">
-      <div class="contact-linkedin"><a href="https://www.linkedin.com/in/natasha-yonamine/" target="_blank"><i class="fa-brands fa-linkedin"></i></div></a>
-      <div class="contact-github"><a href="https://github.com/natashayasu" target="_blank"><i class="fa-brands fa-github"></i></div></a>
-    </div>
-  </section>
+    <section>
+        <div class="journey-container"  id="journey">
+            <div class="journey-title">Trajetória</div>
 
-  <script src="script.js"></script>
+            <div class="journey-item">
+                <div class="journey-item1">
+                    <div class="journey-number1">Análise e Desenvolvimento de Sistemas</div>
+                    <div class="journey-number2">Curso focado em lógica de programação, banco de dados e desenvolvimento de software. Início da minha formação em tecnologia.</div>
+                </div>
+                <div class="journey-item1">
+                    <div class="journey-number1">Ciências da Computação</div>
+                    <div class="journey-number2">Aprofundamento em algoritmos, estruturas de dados, IA e arquitetura de computadores. Formação mais completa e teórica na área de computação.</div>
+                </div>
+                <div class="journey-item1">
+                    <div class="journey-number1">Estágio em Suporte de TI</div>
+                    <div class="journey-number2">Atendimento técnico, manutenção de hardware e software, suporte remoto e presencial. Desenvolvimento de habilidades práticas no ambiente corporativo.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-container" id="contact">
+            <div class="contact-title">Contatos</div>
+            <div class="contact-email">natashayonamine@gmail.com</div>
+            <div class="contact-social">
+                <a href="https://www.linkedin.com/in/natasha-yonamine/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/natashayasu" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
