@@ -284,7 +284,7 @@ body.dark-mode .contact-container a {
     }
 
     .journey-item {
-        margin: 70px 90px;
+        margin: 70px 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -306,6 +306,7 @@ body.dark-mode .contact-container a {
     .journey-number2 {
         margin-top: 20px;
         font-size: 10pt;
+        text-align: center;
     }
 
     /* RODAPÉ CONTATOS */
