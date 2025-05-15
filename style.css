@@ -239,7 +239,7 @@ body.dark-mode .contact-container a {
 
 /* Mobile */
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
 
     /* SOBRE */
 
@@ -256,7 +256,7 @@ body.dark-mode .contact-container a {
         gap: 50px;
         text-align: center;
         align-items: center;
-        margin: 0 80px;
+        margin: 0 40px;
 
     }
 
@@ -277,10 +277,10 @@ body.dark-mode .contact-container a {
     /* TRAJETÓRIA */
 
     .journey-title {
-        font-size: 30pt;
+        font-size: 25pt;
         font-weight: bold;
         text-align: center;
-        margin-top: 170px;
+        margin-top: 230px;
     }
 
     .journey-item {
@@ -288,7 +288,6 @@ body.dark-mode .contact-container a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 50px;
     }
 
     .journey-item1 {
@@ -299,14 +298,14 @@ body.dark-mode .contact-container a {
     }
 
     .journey-number1 {
-        font-size: 20pt;
+        font-size: 14pt;
         font-weight: bold;
         text-align: center;
     }
 
     .journey-number2 {
         margin-top: 20px;
-        font-size: 16pt;
+        font-size: 10pt;
     }
 
     /* RODAPÉ CONTATOS */
@@ -327,7 +326,7 @@ body.dark-mode .contact-container a {
     }
 
     .contact-title {
-        font-size: 30pt;
+        font-size: 25pt;
         font-weight: bold;
         color: black;
     }
