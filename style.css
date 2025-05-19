@@ -3,339 +3,264 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: inter;
 }
 
-body {
-    transition: 0.2s;
-}
-
-/* NAV BAR */
-
-.nav-container {
-    width: 100%;
+.navContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
-    position: fixed;
-    top: 0;
     background-color: white;
-    box-sizing: border-box;
-    transition: 0.2s;
+    position: fixed;
+    width: 100%;
+    padding: 30px 100px;
+    font-size: clamp(0.8rem, 1.2vw, 1.2rem);
 }
 
-.nav-container a {
-    text-decoration: none;
+.navContainer a {
     color: black;
+    text-decoration: none;
 }
 
-.nav-container a:hover {
-   border-bottom: 2px solid black;
+.navContainer a:hover {
+    border-bottom: 2px solid black;
 }
 
-.nav-container ul {
+.navContainer ul {
     display: flex;
-    gap: 40px;
+    gap: 50px;
     list-style: none;
 }
 
-.nav-container .nav-btn {
+.navContainer .navBtn {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
-.nav-container button {
-    color: white;
+.navContainer button {
     background-color: black;
+    color: white;
     padding: 10px 30px;
     border-radius: 30px;
-    cursor: pointer;
-    border: solid 1px black;
+    border: 1px solid black;
     transition: 0.2s;
+    font-size: 0.8vw;
+    cursor: pointer;
 }
 
-.nav-container button:hover {
-    color: black;
+.navContainer button:hover {
     background-color: white;
+    color: black;
 }
 
-/* SOBRE */
+#navBars {
+    display: none;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
 
-main {
+
+.aboutContainer {
+    padding: 50px 200px;
     width: 100vw;
     height: 100vh;
-    padding-top: 140px;
-}
-
-.about-container {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    text-align: left;
     align-items: center;
-    margin: 0 170px;
+    justify-content: center;
+    gap: 70px;
 }
 
-.about-title {
-    font-size: 50pt;
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutTitle {
     font-weight: bold;
+    font-size: clamp(1.5rem, 3vw, 3rem);
 }
 
-.about-text {
-    margin: 10px 0 20px 0;
-    font-size: 16pt;
+.aboutText {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
-.about-container button {
+.aboutContent button {
     background-color: black;
     color: white;
     padding: 10px 30px;
     border-radius: 30px;
-    border: solid 1px black;
-    cursor: pointer;
+    border: 1px solid black;
     transition: 0.2s;
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
 }
 
-.about-container button:hover {
+.aboutContent button:hover {
     background-color: white;
     color: black;
 }
 
-.about-img img {
-    width: 400px;
+.aboutImg {
+    width: 160rem;
 }
 
-/* TRAJETÓRIA */
+.aboutImg img {
+    max-width: 100%;
+    height: auto;
+}
 
-.journey-title {
-    font-size: 30pt;
-    font-weight: bold;
+
+.journeyTitle {
+    font-size: clamp(1.5rem, 3vw, 3rem);
     text-align: center;
-}
-
-.journey-item {
-    margin: 70px 90px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    gap: 50px;
-}
-
-.journey-item1 {
-    color: white;
-    background-color: black;
-    padding: 40px;
-    border-radius: 30px;
-}
-
-.journey-number1 {
-    font-size: 20pt;
     font-weight: bold;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
-.journey-number2 {
-    margin-top: 20px;
-    font-size: 16pt;
-}
-
-/* RODAPÉ CONTATOS */
-
-.contact-container {
-    margin: 20px;
-    text-align: center;
-}
-
-.contact-container a {
-    color: black;
-}
-
-.contact-email {
-    color: black;
-    margin: 10px 0;
-    font-size: 15pt;
-}
-
-.contact-title {
-    font-size: 30pt;
-    font-weight: bold;
-    color: black;
-}
-
-.contact-social {
+.journeyItem {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+    border-radius: 30px;
+    padding: 30px 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
     justify-content: center;
-    font-size: 30pt;
+    flex: 1 1 300px;
+    height: 270px;
 }
 
-/* Modo dark */
-
-body.dark-mode {
-    background-color: #121212;
+.journeyItem11 {
+    font-weight: bold;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
-body.dark-mode .nav-container {
-    background-color: #121212;
+.journeyItem12 {
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
 }
 
-body.dark-mode .nav-container a {
-    color: white;
+.journeyContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 10px 180px;
 }
 
-body.dark-mode .nav-container a:hover {
-    border-bottom: 2px solid white;
-}
 
-body.dark-mode .nav-container button {
-    background-color: white;
-    color: black;
-    border: 1px solid white;
-}
+@media (max-width: 768px) {
 
-body.dark-mode .nav-container button:hover {
-    background-color: #121212;;
-    color: white;
-    border: 1px solid white;
-}
-
-body.dark-mode .about-container {
-    color: white;
-}
-
-body.dark-mode .about-container button {
-    color: black;
-    background-color: white;
-    border: 1px solid white;
-}
-
-body.dark-mode .about-container button:hover {
-    color: white;
-    background-color: #121212;
-    border: 1px solid white;
-}
-
-body.dark-mode .journey-title {
-    color: white;
-}
-
-body.dark-mode  .journey-item1 {
-    color: black;
-    background-color: white;
-}
-
-body.dark-mode .contact-title {
-    color: white;
-}
-
-body.dark-mode .contact-email {
-    color: white;
-}
-
-body.dark-mode .contact-container a {
-    color: white;
-}
-
-/* Mobile */
-
-@media (max-width: 400px) {
-
-    /* SOBRE */
-
-    main {
-        width: 100vw;
-        height: 100vh;
-        padding-top: 140px;
+    .navContainer {
+        padding: 20px 50px;
+        flex-wrap: wrap;
     }
 
-    .about-container {
-        display: flex;
+    .navContainer #navLinks {
+        display: none;
         flex-direction: column;
-        justify-content: center;
-        gap: 50px;
-        text-align: center;
         align-items: center;
-        margin: 0 40px;
-
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 30px 0;
+        gap: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    .about-title {
-        font-size: 30pt;
-        font-weight: bold;
+    .navContainer #navLinks.active {
+        display: flex;
     }
 
-    .about-text {
-        margin: 10px 0 20px 0;
+    .navContainer .navBtn {
+        display: flex;
+        gap: 15px;
+        margin-left: auto;
+    }
+
+    .navContainer button {
+        font-size: 8pt;
+    }
+
+    .navContainer .navMenu {
         font-size: 14pt;
     }
 
-    .about-img img {
-        width: 300px;
+    #navBars {
+        display: block;
+        font-size: 1.2rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
     }
 
-    /* TRAJETÓRIA */
 
-    .journey-title {
-        font-size: 25pt;
-        font-weight: bold;
+    .aboutContainer {
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        margin-top: 230px;
-    }
-
-    .journey-item {
-        margin: 70px 50px;
+        width: 100vw;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        gap: 70px;
+        padding: 150px 100px;
     }
 
-    .journey-item1 {
-        color: white;
-        background-color: black;
-        padding: 40px;
-        border-radius: 30px;
-    }
-
-    .journey-number1 {
-        font-size: 14pt;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .journey-number2 {
-        margin-top: 20px;
-        font-size: 10pt;
-        text-align: center;
-    }
-
-    /* RODAPÉ CONTATOS */
-
-    .contact-container {
-        margin: 20px;
-        text-align: center;
-    }
-
-    .contact-container a {
-        color: black;
-    }
-
-    .contact-email {
-        color: black;
-        margin: 10px 0;
-        font-size: 15pt;
-    }
-
-    .contact-title {
-        font-size: 25pt;
-        font-weight: bold;
-        color: black;
-    }
-
-    .contact-social {
+    .aboutContent {
         display: flex;
+        flex-direction: column;
         gap: 30px;
-        justify-content: center;
+    }
+
+    .aboutTitle {
+        font-size: 20pt;
+    }
+
+    .aboutText {
+        font-size: 16pt;
+    }
+
+    .aboutContent button {
+        font-size: 12pt;
+    }
+
+    .aboutImg {
+        max-width: 350px;
+    }
+
+    .aboutImg img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .journeyTitle {
         font-size: 30pt;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .journeyItem11 {
+        font-weight: bold;
+        font-size: 20pt;
+    }
+
+    .journeyItem12 {
+        font-size: 16pt;
+    }
+
+    .journeyContent {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin: 10px 100px;
     }
 }
