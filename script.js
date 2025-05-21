@@ -1,13 +1,13 @@
-let themeToggle = document.getElementById("themeToggle")
+let themeToggle = document.querySelectorAll(".themeToggle");
 
-themeToggle.addEventListener("click", () => {
-
-    document.body.classList.toggle("dark-mode");
+themeToggle.forEach(button => {
+    button.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+    });
 });
 
-
-let navBars = document.getElementById("navBars")
-let navLinks = document.getElementById("navLinks")
+let navBars = document.getElementById("nav-mobile");
+let navLinks = document.getElementById("links-mobile");
 
 navBars.addEventListener("click", () => {
     navLinks.classList.toggle("active");

@@ -1,0 +1,43 @@
+body.dark-mode .nav-bar {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .nav-bar a {
+    color: white;
+}
+
+body.dark-mode {   
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode button {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+}
+
+body.dark-mode button:hover {
+    color: white;
+    background-color: #1e1e1e;
+}
+
+body.dark-mode a {
+    color: white;
+}
+
+body.dark-mode .joruney {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode .journey-content {
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode #links-mobile {
+    color: black;
+    background-color: #1e1e1e;
+}

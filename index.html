@@ -6,58 +6,88 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="darkmode.css">
 
-    <title>Portfólio</title>
+    <title>Natasha Kaori</title>
 </head>
 <body>
+    <header>
+        <nav class="nav-bar">
+            <div id="nav-menu">
+                <a href="">Menu</a>
+            </div>
 
-    <nav>
-        <div class="navContainer">
-            <div class="navMenu"><a href="">Menu</a></div>
-            <ul id="navLinks"> 
-                <li><a href="">Trajetória</a></li>
+            <ul class="nav-links">
+                <li><a href="#journey">Trajetória</a></li>
                 <li><a href="">Skills</a></li>
                 <li><a href="">Projetos</a></li>
             </ul>
-            <div class="navBtn">
-                <button id="themeToggle">Dark mode</button>
-                <button class="langToggle">English</button>
+ 
+            <div class="nav-btn">
+                <button class="themeToggle">Dark mode</button>
+                <button>English</button>
             </div>
-            <button id="navBars"><i class="fa-solid fa-bars"></i></button>
-        </div>
-    </nav>
+
+            <div class="links-mobile" id="links-mobile">
+                <ul>
+                    <li><a href="#journey">Trajetória</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Projetos</a></li>
+                </ul>
+
+                <button class="themeToggle">Dark mode</button>
+                <button>English</button>
+            </div>
+
+            <div id="nav-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
     <main>
-        <div class="aboutContainer">
-            <div class="aboutContent">
-                <div class="aboutTitle">Natasha Kaori</div>
-                <div class="aboutText">Sou Natasha Kaori, 20 anos, graduada em Tecnólogo de Análise e Desenvolvimento de Sistemas pela UNICID Tatuapé (2024) e atualmente cursando Bacharelado em Ciências da Computação, com previsão de conclusão em 2028. Tenho foco em Front-end e, atualmente, estou estagiando como suporte técnico em uma empresa de turismo. Busco sempre aprimorar minhas habilidades e encarar novos desafios na área de tecnologia.</div>
-                <a href=""><button>Contatos</button></a>
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-title">Natasha Kaori</div>
+                <div class="about-text">Sou Natasha Kaori, 20 anos, graduada em Tecnólogo de Análise e Desenvolvimento de Sistemas pela UNICID Tatuapé (2024) e atualmente cursando Bacharelado em Ciências da Computação, com previsão de conclusão em 2028. Tenho foco em Front-end e, atualmente, estou estagiando como suporte técnico em uma empresa de turismo. Busco sempre aprimorar minhas habilidades e encarar novos desafios na área de tecnologia.</div>
+                <a href="#contacts"><button>Contatos</button></a>
             </div>
-            <div class="aboutImg"><img src="assets/eu.png" alt="Kaori"></div>
-        </div> 
+            <div class="about-img"><img src="assets/eu.png" alt=""></div>
+        </div>
     </main>
 
     <section>
-        <div class="journeyContainer">
-            <div class="journeyTitle">Trajetória</div>
+        <div class="journey" id="journey">
+            <div class="journey-title">Trajetória</div>
 
-            <div class="journeyContent">
-                <div class="journeyItem">
-                    <div class="journeyItem11">Análise e Desenvolvimento de Sistemas</div>
-                    <div class="journeyItem12">Curso focado em lógica de programação, banco de dados e desenvolvimento de software. Início da minha formação em tecnologia.</div>
+            <div class="journey-itens">
+                <div class="journey-content">
+                    <div class="journey-item">Desenvolvimento de Sistemas</div>
+                    <div class="journey-desc">Curso focado em lógica de programação, banco de dados e desenvolvimento de software. Início da minha formação em tecnologia.</div>
                 </div>
-                <div class="journeyItem">
-                    <div class="journeyItem11">Ciências da Computação</div>
-                    <div class="journeyItem12">Aprofundamento em algoritmos, estruturas de dados, IA e arquitetura de computadores. Formação mais completa e teórica na área de computação.</div>
+                <div class="journey-content">
+                    <div class="journey-item">Ciências da Computação</div>
+                    <div class="journey-desc">Aprofundamento em algoritmos, estruturas de dados, IA e arquitetura de computadores. Formação mais completa e teórica na área de computação.</div>
                 </div>
-                <div class="journeyItem">
-                    <div class="journeyItem11">Estágio em Suporte de TI</div>
-                    <div class="journeyItem12">Atendimento técnico, manutenção de hardware e software, suporte remoto e presencial. Desenvolvimento de habilidades práticas no ambiente corporativo.</div>
+                <div class="journey-content">
+                    <div class="journey-item">Estágio em Suporte de TI</div>
+                    <div class="journey-desc">Atendimento técnico, manutenção de hardware e software, suporte remoto e presencial. Desenvolvimento de habilidades práticas no ambiente corporativo.</div>
                 </div>
             </div>
+                
         </div>
     </section>
+    
+    <footer>
+        <div class="contacts" id="contacts">
+            <div class="contacts-title">Contatos</div>
+            <div class="contacts-social">
+               <a href="https://github.com/natashayasu" target="_blank"><i class="fa-brands fa-github"></i></a>
+               <a href="https://www.linkedin.com/in/natasha-yonamine/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
