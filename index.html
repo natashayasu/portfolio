@@ -1,0 +1,166 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/dark-mode.css">
+        <link rel="stylesheet" href="css/projetos.css">
+
+        <title>Portfólio</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <div id="nav-menu">
+                    <a href="">Menu</a>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#journey">Trajetória</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="">Projetos</a></li>
+                </ul>
+    
+                <div class="nav-btn">
+                    <button class="themeToggle">Dark mode</button>
+                    <button>English</button>
+                </div>
+
+                <div class="links-mobile" id="links-mobile">
+                    <ul>
+                        <li><a href="#journey">Trajetória</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects-title">Projetos</a></li>
+                    </ul>
+
+                    <button class="themeToggle">Dark mode</button>
+                    <button>English</button>
+                </div>
+
+                <div id="nav-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content-container">
+                <div class="content-text">
+                    <div id="name">Natasha Kaori</div>
+                    <div id="text">
+                        Sou Natasha Kaori, 20 anos, formada em Análise e Desenvolvimento de Sistemas (UNICID - 2024) e atualmente curso Ciências da Computação. Tenho foco em Front-end e atuo como estagiária de suporte técnico em uma empresa de turismo. Estou em constante busca por aprendizado e novos desafios na área de tecnologia.
+                    </div>
+                    <div id="contact-btn">
+                        <a href="#contacts"><button>Contatos</button></a>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <img src="assets/eu.png" alt="">
+                </div>
+            </div>
+        </main>
+
+        <section>
+            <div class="journey-container" id="journey">
+                <div id="journey-title">
+                    Trajetória
+                </div>
+                <div class="journey-content">
+                    <div class="journey1">
+                        <div class="item3"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="item1">Desenvolvimento de Sistemas</div>
+                        <div class="item2">Curso focado em lógica de programação, banco de dados e desenvolvimento de software. Início da minha formação em tecnologia.</div>
+                    </div>
+                    <div class="journey1">
+                        <div class="item3"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="item1">Ciências da Computação</div>
+                        <div class="item2">Aprofundamento em algoritmos, estruturas de dados, IA e arquitetura de computadores. Formação mais completa e teórica na área de computação.</div>
+                    </div>
+                    <div class="journey1">
+                        <div class="item3"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="item1">Estágio em Suporte de TI</div>
+                        <div class="item2">Atendimento técnico, manutenção de hardware e software, suporte remoto e presencial. Desenvolvimento de habilidades práticas no ambiente corporativo.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="skills-container" id="skills">
+                <div id="skills-title">Skills</div>
+                <div class="skills-content">
+                    <div class="skills">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Responsividade</p>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-github"></i>
+                        <p>GitHub</p>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>VsCode</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="projects-container">
+                <div id="projects-title">Projetos</div>
+
+                <div class="iphone">
+                <div class="screen" id="screen">
+                    <button class="back-button" onclick="goBack()">← Menu</button>
+
+                    <div class="menu">
+                        <button onclick="openApp('projetos/calculadora/index.html')">
+                            <img src="assets/calculadora.jfif" alt="App 1">
+                            <span>Calculadora</span>
+                        </button>
+                        <button onclick="openApp('projetos/relogio/index.html')">
+                            <img src="assets/relogio.webp" alt="App 2">
+                            <span>Relógio</span>
+                        </button>
+                        <button onclick="openApp('projetos/projeto3/index.html')">
+                            <img src="icons/app3.png" alt="App 3">
+                        </button>
+                    </div>
+
+                    <iframe id="appFrame" src=""></iframe>
+                </div>
+                </div>                
+                
+            </div>
+        </section>
+
+        <footer>
+            <div class="contact-container" id="contacts">
+                <div id="contact-title">Contatos</div>
+                <div id="social">
+                    <a href="https://github.com/natashayasu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/natasha-yonamine/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,65 @@
+body.dark-mode {
+    background-color: #1C1C1C;
+    color: white;
+}
+
+/* Navbar */
+body.dark-mode .nav-bar {
+    background-color: #2C2C2C;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .nav-bar a {
+    color: white;
+}
+
+/* Botões */
+body.dark-mode .nav-btn button,
+body.dark-mode .links-mobile button,
+body.dark-mode #contact-btn button {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+body.dark-mode .nav-btn button:hover,
+body.dark-mode .links-mobile button:hover,
+body.dark-mode #contact-btn button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Menu mobile */
+body.dark-mode .links-mobile {
+    background-color: #2C2C2C;
+}
+
+/* Textos */
+body.dark-mode #name,
+body.dark-mode #text,
+body.dark-mode .item1,
+body.dark-mode .item2,
+body.dark-mode #skills-title,
+body.dark-mode #journey-title,
+body.dark-mode #contact-title {
+    color: white;
+}
+
+/* Cards e blocos */
+body.dark-mode .journey1,
+body.dark-mode .skills-content .skills {
+    background-color: #3A3A3A;
+    color: white;
+    box-shadow: 0 1px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Rodapé */
+body.dark-mode footer {
+    background-color: #2C2C2C;
+}
+
+/* Ícones sociais */
+body.dark-mode #social a {
+    color: white;
+}

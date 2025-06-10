@@ -1,0 +1,50 @@
+@media screen and (max-width: 1170px) {
+
+    .nav-bar {
+        padding: 20px 50px;
+    }
+
+    #nav-links, .nav-btn {
+        display: block;
+    }
+
+    #nav-mobile {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .nav-bar .nav-links, .nav-btn button {
+        display: none;
+    }
+
+    .links-mobile {
+        display: none;
+        background-color: white;
+        height: 100vh;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    #links-mobile.active {
+        display: flex;
+    }
+
+
+    .content-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .journey-content {
+        padding: 30px 40px;
+    }
+
+    #name {
+        font-size: 30pt;
+        margin-bottom: 15px;
+    }
+
+    .content-img img {
+        width: 300px;
+    }
+}
